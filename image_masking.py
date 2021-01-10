@@ -6,7 +6,7 @@ import glob
 img_path='./renamed_images/'
 mask_path='./masks/'
 rgb_target='./masked_rgb/'
-depth_target='./maksed_depth/'
+depth_target='./masked_depth/'
 if not os.path.exists(rgb_target):
     os.makedirs(rgb_target)
 if not os.path.exists(depth_target):
