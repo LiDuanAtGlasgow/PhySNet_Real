@@ -17,7 +17,5 @@ for fil in sorted(glob.glob(img_path+'*rgb.png'),key=str.lower):
     blue_lower=np.array([30,40,40],np.uint8)
     blue_upper=np.array([71,255,255],np.uint8)
     mask=cv2.inRange(hsv,blue_lower,blue_upper)
-    #lower_bound=np.array([44,54,63],np.uint8)
-    #upper_bound=np.array([71,255,255],np.uint8)
     cv2.imwrite(target_path+str(i).zfill(4)+'_mask.png',mask)
 print ('finished!')
